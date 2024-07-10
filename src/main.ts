@@ -1,6 +1,17 @@
-import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+// function doSomething(){
+//   for(let i=0; i<5; i++){
+//     console.log(i);
+//   }
+// }
+// doSomething();
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+// arrow function
+let log = function(message: any){
+  console.log(message);
+}
+
+
+let log2 = (message: any) => {
+  console.log(message);
+}
+
