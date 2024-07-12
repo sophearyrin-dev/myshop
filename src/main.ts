@@ -16,5 +16,16 @@ let log2 = (message: any) => {
 }
 
 //interface
+interface Point {
+  x: number,
+  y: number
+}
+
+let drawPoint = (point : Point) => {
+
+}
+
+drawPoint({x:10, y:20});
+
 
 
