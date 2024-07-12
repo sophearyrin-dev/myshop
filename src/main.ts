@@ -15,3 +15,6 @@ let log2 = (message: any) => {
   console.log(message);
 }
 
+//interface
+
+
