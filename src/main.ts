@@ -6,14 +6,14 @@
 // doSomething();
 
 // arrow function
-let log = function(message: any){
-  console.log(message);
-}
+// let log = function(message: any){
+//   console.log(message);
+// }
 
 
-let log2 = (message: any) => {
-  console.log(message);
-}
+// let log2 = (message: any) => {
+//   console.log(message);
+// }
 
 //interface
 // interface Point {
@@ -32,6 +32,14 @@ class Point {
   x: number;
   y: number;
 
+  constructor(x: number, y: number) {
+    this.x = x;
+    this.y = y;
+  }
+  move(dx: number, dy: number) {
+    this.x += dx;
+    this.y += dy;
+  }
   draw() {
     console.log(`X: ${this.x}, Y: ${this.y}`);
   }
@@ -43,6 +51,12 @@ class Point {
   }
 
 }
+
+//Object
+let objectPoint: Point = new Point(3,4);
+
+objectPoint.draw();
+
 
 
 
