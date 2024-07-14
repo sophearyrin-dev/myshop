@@ -32,6 +32,7 @@ class Point {
   x: number;
   y: number;
 
+  //constructor
   constructor(x: number, y: number) {
     this.x = x;
     this.y = y;
@@ -41,7 +42,7 @@ class Point {
     this.y += dy;
   }
   draw() {
-    console.log(`X: ${this.x}, Y: ${this.y}`);
+    console.log(`X=${this.x} and Y=${this.y}`);
   }
 
   getDistance(another : Point){
@@ -52,8 +53,8 @@ class Point {
 
 }
 
-//Object
-let objectPoint: Point = new Point(3,4);
+//Creating Object
+let objectPoint = new Point(3,4);
 
 objectPoint.draw();
 
