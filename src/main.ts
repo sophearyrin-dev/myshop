@@ -55,7 +55,7 @@ class Point {
 
 //Creating Object
 let objectPoint = new Point(3,4);
-objectPoint.x = 20;
+//objectPoint.x = 20;
 
 objectPoint.draw();
 
