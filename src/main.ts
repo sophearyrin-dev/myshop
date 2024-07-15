@@ -32,7 +32,7 @@ class Point {
 
 
   //constructor
-  constructor(public x: number, public y: number) {
+  constructor(private x: number, public y: number) {
   }
   move(dx: number, dy: number) {
     this.x += dx;
@@ -40,6 +40,10 @@ class Point {
   }
   draw() {
     console.log(`X=${this.x} and Y=${this.y}`);
+  }
+
+  getX(){
+    return this.x;
   }
 
   getDistance(another : Point){
