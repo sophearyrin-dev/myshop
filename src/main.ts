@@ -46,6 +46,12 @@ class Point {
     return this.x;
   }
 
+  setX(value: any) {
+    if(value < 0){
+      throw new Error("Value cannot be less than Zero");
+    }
+  }
+
   getDistance(another : Point){
     let dx = this.x - another.x;
     let dy = this.y - another.y;
