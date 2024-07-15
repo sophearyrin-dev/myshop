@@ -29,13 +29,10 @@
 
 //Class
 class Point {
-  private x: number;
-  y: number;
+
 
   //constructor
-  constructor(x: number, y: number) {
-    this.x = x;
-    this.y = y;
+  constructor(public x: number, public y: number) {
   }
   move(dx: number, dy: number) {
     this.x += dx;
