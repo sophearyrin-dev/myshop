@@ -5,6 +5,8 @@
 // }
 // doSomething();
 
+import { Console } from "node:console";
+
 // arrow function
 // let log = function(message: any){
 //   console.log(message);
@@ -30,7 +32,6 @@
 //Class
 class Point {
 
-
   //constructor
   constructor(private x: number, public y: number) {
   }
@@ -46,10 +47,12 @@ class Point {
     return this.x;
   }
 
-  setX(value: any) {
+  //YOU can make setter like set X
+  set X(value: any) {
     if(value < 0){
       throw new Error("Value cannot be less than Zero");
     }
+    this.x = value;
   }
 
   getDistance(another : Point){
@@ -63,6 +66,8 @@ class Point {
 //Creating Object
 let objectPoint = new Point(3,4);
 //objectPoint.x = 20;
+console.log(objectPoint.getX);
+objectPoint.X = 300;
 
 objectPoint.draw();
 
