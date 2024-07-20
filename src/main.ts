@@ -29,11 +29,18 @@
 
 //Class
 
-import { Point } from "./point";
+// import { Point } from "./point";
 
-let point = new Point(1,2);
+// let point = new Point(1,2);
 
-console.log(point.X);
+// console.log(point.X);
+
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app/app.module';
+
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error(err));
+
 
 
 
