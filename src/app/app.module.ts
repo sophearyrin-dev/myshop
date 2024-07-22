@@ -8,7 +8,6 @@ import { CoursesComponent } from '../courses.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
     CoursesComponent
   ],
   imports: [
@@ -17,6 +16,5 @@ import { CoursesComponent } from '../courses.component';
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
 })
 export class AppModule { }
