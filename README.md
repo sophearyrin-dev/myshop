@@ -27,5 +27,21 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
 # BootStrap5
-- Flexbox
+- Flexbox: 
 The biggest difference between Bootstrap 3 and Bootstrap 4 & 5 is that Bootstrap 5 now uses flexbox, instead of floats, to handle the layout.
+- Gutter : Is the space between columns in the grid system. and we use gx- and gy-. .gy-*: Vertical gutters.
+.gx-*: Horizontal gutters.
+  ```html
+  <div class="row gx-3">
+  <div class="col">
+    Column 1
+  </div>
+  <div class="col">
+    Column 2
+  </div>
+</div>
+  ```
+<img width="342" alt="image" src="https://github.com/user-attachments/assets/41592e2d-4583-44c9-a26e-47c3961479ad">
+
+
+
