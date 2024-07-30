@@ -25,8 +25,8 @@ export class ProfessorComponent {
   }
 
   //to initilize object
-  constructor(){
-    let professorService = new ProfessorsService();
+  //dependency injection: inject the professor service
+  constructor(professorService: ProfessorsService){
     this.professors = professorService.getProfessor();
   }
 }
