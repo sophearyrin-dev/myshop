@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { AppComponent } from "./app.component";
 import { CoursesComponent } from "../courses.component";
 import { BrowserModule } from "@angular/platform-browser";
+import { ProfessorsService } from "./professor/professer.service";
 
 
 @NgModule({
@@ -11,7 +12,9 @@ import { BrowserModule } from "@angular/platform-browser";
   imports : [
     BrowserModule
   ],
-  providers : [],
+  providers : [
+    ProfessorsService
+  ],
   bootstrap : [AppComponent]
 })
 
