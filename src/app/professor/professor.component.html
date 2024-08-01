@@ -1,1 +1,28 @@
-<p>professor works!</p>
+<h1>Professor List</h1>
+<div *ngIf ="professors.length>0" *ngFor="let p of professors">
+  <p>{{p}}</p>
+</div>
+
+<div *noIf ="professors.length ==0">
+  <p>No Professor in the list</p>
+</div>
+
+<!-- or we can write another way -->
+
+<div *ngIf="professors.length>0; else noProfessors">
+  <p *ngFor="let p of professors">{{p}}</p>
+</div>
+<ng-template #noProfessors>
+  <p>No Professor in the list</p>
+</ng-template>
+
+<!-- or we can use two templates -->
+
+<div *ngIf="professors.length>0; then hasProfessors else noProfessors"></div>
+<ng-template #hasProfessors *ngFor = "let p of professors">
+  <p>{{p}}</p>
+</ng-template>
+
+<ng-template #noProfessors>
+  <p>No Professor in the list</p>
+</ng-template>
