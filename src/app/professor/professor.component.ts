@@ -12,6 +12,9 @@ import { Component } from '@angular/core';
           {{ professor }}
       </li>
     </ul>
+
+    <img src="{{ imageUrl }}"/>
+    <img [src]="imageUrl" />
   `,
   styleUrl: './professor.component.css'
 })
@@ -19,6 +22,7 @@ import { Component } from '@angular/core';
 export class ProfessorComponent {
   title = "Professor1";
   professors;
+  imageUrl ="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
 
   getTitle() {
     return this.title;
