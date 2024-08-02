@@ -1,3 +1,4 @@
+import { log } from 'node:console';
 import { ProfessorsService } from './professer.service';
 import { Component } from '@angular/core';
 
@@ -15,6 +16,7 @@ import { Component } from '@angular/core';
 
     <img src="{{ imageUrl }}"/>
     <img [src]="imageUrl" />
+    <button (click)="methodName()">My Button</button>
   `,
   styleUrl: './professor.component.css'
 })
@@ -32,5 +34,10 @@ export class ProfessorComponent {
   //dependency injection: inject the professor service
   constructor(professorService: ProfessorsService){
     this.professors = professorService.getProfessor();
+  }
+
+  methodName(){
+    console.log("You clicked");
+    
   }
 }
