@@ -16,7 +16,10 @@ import { Component } from '@angular/core';
 
     <img src="{{ imageUrl }}"/>
     <img [src]="imageUrl" />
-    <button (click)="methodName()">My Button</button>
+    
+    <div (click)="divClickMethod()">
+      <button (click)="methodName($event)">My Button</button>
+    </div>
   `,
   styleUrl: './professor.component.css'
 })
@@ -36,8 +39,14 @@ export class ProfessorComponent {
     this.professors = professorService.getProfessor();
   }
 
-  methodName(){
-    console.log("You clicked");
-    
+  divClickMethod() {//to prevent bubbling up
+    console.log("Div Clicked");
   }
+  methodName($event:any){
+    $event.stopPropagation();
+    console.log("You clicked");
+    console.log($event);
+  }
+
+
 }
