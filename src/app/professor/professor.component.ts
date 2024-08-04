@@ -20,6 +20,11 @@ import { Component } from '@angular/core';
     <div (click)="divClickMethod()">
       <button (click)="methodName($event)">My Button</button>
     </div>
+
+    <div>
+      <input type="text" (keyup.enter)="enterPressed($event)"/>
+      <button>Press Enter</button>
+    </div>
   `,
   styleUrl: './professor.component.css'
 })
@@ -45,6 +50,11 @@ export class ProfessorComponent {
   methodName($event:any){
     $event.stopPropagation();
     console.log("You clicked");
+    console.log($event);
+  }
+
+  enterPressed($event: any){
+    console.log("Enter Pressed");
     console.log($event);
   }
 
