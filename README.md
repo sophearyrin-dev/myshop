@@ -44,4 +44,10 @@ The biggest difference between Bootstrap 3 and Bootstrap 4 & 5 is that Bootstrap
 <img width="342" alt="image" src="https://github.com/user-attachments/assets/41592e2d-4583-44c9-a26e-47c3961479ad">
 
 
+# JS Function
+![Alt text](image1.gif)
+- Filter
+The filter method in JavaScript is used to create a new array with all elements that pass a test implemented by the provided function. This method does not mutate the original array but returns a new array with the elements that meet the condition.
+
+
 
