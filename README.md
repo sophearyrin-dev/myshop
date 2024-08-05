@@ -45,7 +45,7 @@ The biggest difference between Bootstrap 3 and Bootstrap 4 & 5 is that Bootstrap
 
 
 # JS Function
-<img src="image1.gif">
+<img src="image1.gif" style="width: 20px, height: 20px">
 - Filter
 The filter method in JavaScript is used to create a new array with all elements that pass a test implemented by the provided function. This method does not mutate the original array but returns a new array with the elements that meet the condition.
 
