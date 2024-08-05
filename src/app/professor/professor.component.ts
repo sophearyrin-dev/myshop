@@ -25,11 +25,26 @@ import { Component } from '@angular/core';
       <input type="text" (keyup.enter)="enterPressed($event)"/>
       <button>Press Enter</button>
     </div>
+
+    <!-- template variable -->
+    <!-- user input hello -->
+    <input type="text" (keyup.enter)="inputEmail($event)" /> 
+
+    <!-- or we can use -->
+    <input #email (keyup.enter)="inputEmail2(email.value)"/>
   `,
   styleUrl: './professor.component.css'
 })
 
 export class ProfessorComponent {
+  inputEmail($event:any){
+    console.log($event.target.value); //hllo
+  }
+  inputEmail2(email:any){
+    console.log(email); //hllo
+  }
+
+  
   title = "Professor1";
   professors;
   imageUrl ="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
