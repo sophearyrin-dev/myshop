@@ -55,4 +55,11 @@ The find method in JavaScript is used to search through an array and return the 
 - online ide: https://www.programiz.com/online-compiler/5CcawMfn2pGWk
 
 
+# GIT STASH:
+- is a powerful command in Git that allows you to temporarily save changes that are not yet ready to be committed. This can be especially useful when you need to switch branches, work on something else, or pull the latest changes without committing unfinished work.
+
+- 
+
+
+
 
