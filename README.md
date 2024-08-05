@@ -49,5 +49,8 @@ The biggest difference between Bootstrap 3 and Bootstrap 4 & 5 is that Bootstrap
 - Filter
 The filter method in JavaScript is used to create a new array with all elements that pass a test implemented by the provided function. This method does not mutate the original array but returns a new array with the elements that meet the condition.
 
+- Find
+The find method in JavaScript is used to search through an array and return the first element that satisfies a given condition. It is a higher-order function that takes a callback function as an argument. This callback function is executed once for each element in the array until it finds one where the callback returns a truthy value. If no values satisfy the testing function, undefined is returned.
+
 
 
