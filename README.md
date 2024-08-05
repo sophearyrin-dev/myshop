@@ -52,5 +52,7 @@ The filter method in JavaScript is used to create a new array with all elements 
 - Find
 The find method in JavaScript is used to search through an array and return the first element that satisfies a given condition. It is a higher-order function that takes a callback function as an argument. This callback function is executed once for each element in the array until it finds one where the callback returns a truthy value. If no values satisfy the testing function, undefined is returned.
 
+- online ide: https://www.programiz.com/online-compiler/5CcawMfn2pGWk
+
 
 
