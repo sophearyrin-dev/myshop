@@ -56,9 +56,11 @@ The find method in JavaScript is used to search through an array and return the 
 
 
 # GIT STASH:
+<img src="image-1.png" style="width: 20px, height: 20px"/>
 - is a powerful command in Git that allows you to temporarily save changes that are not yet ready to be committed. This can be especially useful when you need to switch branches, work on something else, or pull the latest changes without committing unfinished work.
 
-- 
+- use command : git stash to stash the code that you don't want to commit
+- use command : git stash pop : to unstash or back to your original code
 
 
 
