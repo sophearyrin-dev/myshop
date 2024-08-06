@@ -62,6 +62,12 @@ The find method in JavaScript is used to search through an array and return the 
 - use command : git stash to stash the code that you don't want to commit
 - use command : git stash pop : to unstash or back to your original code
 
+# MVVM Pattern for Frontend
+MVVM (Model-View-ViewModel) is a software architectural pattern that separates an application into three. To apply the MVVM (Model-View-ViewModel) pattern to your Angular project, you need to separate the concerns between your 
+- model: Represents the data 
+- view: Will only be responsible for the presentation layer
+- and view model: The view model will handle the logic and data-binding
+
 
 
 
