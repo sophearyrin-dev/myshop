@@ -32,11 +32,20 @@ import { Component } from '@angular/core';
 
     <!-- or we can use -->
     <input #email (keyup.enter)="inputEmail2(email.value)"/>
+
+    <!-- Two way binding -->
+    <!-- When using NgModel, need to import form in App.module -->
+    <input [(ngModel)="username" (keyup.enter)="inputUserName()"]/>
   `,
   styleUrl: './professor.component.css'
 })
 
 export class ProfessorComponent {
+  username : string = 'pheary';
+  inputUserName(){
+    console.log(this.username);//the output will be the value that you input in the input box
+  }
+
   inputEmail($event:any){
     console.log($event.target.value); //hllo
   }

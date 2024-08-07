@@ -3,6 +3,8 @@ import { AppComponent } from "./app.component";
 import { CoursesComponent } from "../courses.component";
 import { BrowserModule } from "@angular/platform-browser";
 import { ProfessorsService } from "./professor/professer.service";
+//imporot when using NgModel
+import { FormsModule } from "@angular/forms";
 
 
 @NgModule({
@@ -10,7 +12,8 @@ import { ProfessorsService } from "./professor/professer.service";
     AppComponent
   ],
   imports : [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
   ],
   providers : [
     ProfessorsService
