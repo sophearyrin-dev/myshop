@@ -63,10 +63,13 @@ The find method in JavaScript is used to search through an array and return the 
 - use command : git stash pop : to unstash or back to your original code
 
 # MVVM Pattern for Frontend
-MVVM (Model-View-ViewModel) is a software architectural pattern that separates an application into three. To apply the MVVM (Model-View-ViewModel) pattern to your Angular project, you need to separate the concerns between your 
++ MVVM (Model-View-ViewModel) is a software architectural pattern that separates an application into three. To apply the MVVM (Model-View-ViewModel) pattern to your Angular project, you need to separate the concerns between your 
 - model: Represents the data 
 - view: Will only be responsible for the presentation layer
 - and view model: The view model will handle the logic and data-binding
+
+# Cookie and Session
+- Cookie: In Angular, cookies are used to store small pieces of data on the client's browser. This data can be used for various purposes such as maintaining user sessions, storing preferences, and other client-specific information.
 
 
 
